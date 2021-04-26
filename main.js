@@ -6,12 +6,15 @@ const n_element = document.getElementById("n_element");
 const reset = document.getElementById("reset");
 const points = document.getElementById("Points")
 const store = document.getElementById("store")
-const canv_mascot = document.getElementById("canv_mascot")
+const sub_container = document.getElementById("subcontainer");
+const webos = true;
 
 
 let change = 50;
 let puntaje = 0;
 let myWindow;
+let calaca_active = false;
+
 
 
 cuadrado.addEventListener("mousedown", mousedown);    
@@ -124,27 +127,24 @@ function storeopener(e){
 
 function calaca_buy(e){
     if(puntaje >= 400){
-
-        let calaca_mascota = new Image();
-        calaca_mascota.src = "../assets/C3ZwL.png" 
-        
-
-        calaca_mascota.onload = function() {
-            init();
-        }
-
-        let calaca_canv = document.querySelector("canv_mascot")
-        let ctx = calaca_canv.getContext("2d")
-
-        function init() {
-            ctx.drawImage(img_calaca, 128, 128, 55, 64, 0, 0, 100, 100);
-        }
-        
-
+    calaca_active = true;
+    puntaje = puntaje - 400;
     }else{
         window.alert("creditos insuficientes")
     }
+
+    if(calaca_active == true){
+        let html_calaca = '<div id="sprite-container">';
+        let html_calaca_I = ' = <div id="sprite-image"></div>';
+        let html_calaca_II = '</div>';
+
+        sub_container.innerHTML = html_calaca + html_calaca_I + html_calaca_II;
+        sub_container.style.marginLeft = sub_container.style.marginLeft + 20
+        
+    }
+    
 }
+
 
 
 
