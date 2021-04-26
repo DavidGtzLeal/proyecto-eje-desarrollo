@@ -6,7 +6,7 @@
 
 .item{
     font-family: Monserrat;
-    height: 35px;
+    height: 50px;
     width: 100px;
     
     background: orange;
@@ -56,4 +56,42 @@
 
 body{
     background-color: white
+}
+
+h2{
+    font-family: Monserrat;
+    font-size: small;
+}
+
+select{
+    font-family: Monserrat;
+    border: none;
+    margin: auto;
+    align-self: center;
+}
+
+.store{
+    background: none;
+    border:none;
+    font-family: Monserrat;
+}
+
+h3{
+    font-family: Monserrat;
+    font-size: small;
+    padding-left: 20px;
+}
+
+h4{
+    font-family: Monserrat;
+    font-size: small;
+    padding-left: 25px;
+    padding-top: 0px;
+}
+
+.buy{
+    font-family: Monserrat;
+    font-size: small;
+    background: none;
+    border:none;
 }
