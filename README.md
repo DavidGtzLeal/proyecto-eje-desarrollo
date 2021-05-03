@@ -26,13 +26,13 @@ El programa puede tener los siguientes outputs:
 
 ## Diccionario
 
-const cuadrado = Cuadrado de color que se muestra en la aplicación
-const textbox = Textbox que se encuentra dentro del cuadrado de color
-const boton = boton para agregar nuevas entradas
-const n_element = constante donde se guardan las nuevas entradas
-const reset = boton para reiniciar la lista
-const points = contador del puntaje
-const store = boton para iniciar la tienda
-const sub_container = contenedor dentro del cuadrado de color
+1. const cuadrado = Cuadrado de color que se muestra en la aplicación
+2. const textbox = Textbox que se encuentra dentro del cuadrado de color
+3. const boton = boton para agregar nuevas entradas
+4. const n_element = constante donde se guardan las nuevas entradas
+5. const reset = boton para reiniciar la lista
+6. const points = contador del puntaje
+7. const store = boton para iniciar la tienda
+8. const sub_container = contenedor dentro del cuadrado de color
 
 
