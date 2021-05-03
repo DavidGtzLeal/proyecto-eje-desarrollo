@@ -1,6 +1,8 @@
 
-const cuadrado = document.getElementById("item");
-const textbox = document.getElementById("textbox");
+//Este es el script principal
+
+const cuadrado = document.getElementById("item"); 
+const textbox = document.getElementById("textbox"); 
 const boton = document.getElementById("button");
 const n_element = document.getElementById("n_element");
 const reset = document.getElementById("reset");
@@ -17,6 +19,9 @@ let calaca_active = false;
 
 
 
+//función que detecta si el cuadrado de color fue presionado por el 
+//mouse para poder moverlo
+//dinamicamente
 cuadrado.addEventListener("mousedown", mousedown);    
 
 function mousedown(e){
@@ -43,7 +48,7 @@ function mousedown(e){
 boton.addEventListener("mousedown", nu_elem);
 
 
-
+//función para agregar un nuevo elemento al cuadrado de color
 function nu_elem(e){
     let created_elem = document.createElement("div");
     let elem_Text = document.createTextNode(textbox.value);
@@ -66,6 +71,7 @@ function nu_elem(e){
 
 reset.addEventListener("mousedown", checkreset);
 
+//función para reiniciar el contenido de la lista
 function checkreset(e){
     if(reset.checked){
         let cuadrado_HTML_I = "<input type='checkbox' class='checkbox' id='reset'>";
@@ -97,6 +103,7 @@ function checkreset(e){
 
 store.addEventListener("mousedown", storeopener);
 
+//función para abrir la tienda
 function storeopener(e){
     let myWindow = window.open("", "myWindow", "width=600, height=500");
 
@@ -125,6 +132,7 @@ function storeopener(e){
 
 }
 
+//función para comprar la mascota de la Calaca Chida
 function calaca_buy(e){
     if(puntaje >= 400){
     calaca_active = true;
